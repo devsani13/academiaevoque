@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EvoqueAcademia.paginas.pesquisar"
+             BackgroundColor="Black">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Pesquisar Usuários"
+                   FontSize="30"
+                   HorizontalOptions="Center"
+                   TextColor="White"/>
+
+            <Entry Placeholder="Digite o nome ou usuário"
+                   x:Name="searchEntry"
+                   PlaceholderColor="White"/>
+
+            <Button Text="Pesquisar"
+                    BackgroundColor="#FD5B1F"
+                    Clicked="OnPesquisarClicked"/>
+
+            <ListView x:Name="resultListView" BackgroundColor="Black" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" Padding="10">
+                                <Label Text="{Binding Nome, StringFormat='Nome: {0}'}" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+                                <Label Text="{Binding Usuario, StringFormat='Usuario: {0}'}" TextColor="White" FontSize="18"/>
+                                <Label Text="{Binding Senha, StringFormat='Senha: {0}'}" TextColor="White" FontSize="18"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

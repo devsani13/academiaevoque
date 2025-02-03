@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EvoqueAcademia.paginas.unidades">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" HorizontalOptions="Fill" BackgroundColor="Black">
+                <StackLayout BackgroundColor="White" Padding="20">
+                    <Image Source="evoquelogo"
+                   HeightRequest="50"/>
+                </StackLayout>
+
+                <Label Text="Unidades"
+                       TextColor="White"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       BackgroundColor="Black"
+                       Margin="0,-6,0,0"
+                       Padding="10"/>
+
+                <StackLayout Orientation="Vertical" Margin="0,-6,0,0" BackgroundColor="White">
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="maua"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Mauá Plaza Shopping"
+                                   TextColor="Black"
+                                   FontSize="25"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Governador Mário Covas Jr, 01 Centro Mauá Plaza Shopping"
+                                   TextColor="Black"
+                                   FontSize="20"
+                                   HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutmaua" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="homero"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Homero Thon"
+                                   TextColor="Black"
+                                   FontSize="25"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center"/>
+                            <Label Text="Rua Giovanni Battista Pirelli, 1645 Vila Homero Thon – Santo André"
+                                   TextColor="Black"
+                                   FontSize="20"
+                                   HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayouthomero" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="ribeirao"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Ribeirão Pires"
+                                   TextColor="Black"
+                                   FontSize="25"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Francisco Monteiros, 702 Vila Alberti  Ribeirão Pires – SP"
+                                   TextColor="Black"
+                                   FontSize="20"
+                                   HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutribeirao" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="avenida"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Avenida Portugal"
+                                   TextColor="Black"
+                                   FontSize="25"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Portugal, 472 Jardim Pilar – Mauá – SP"
+                                   TextColor="Black"
+                                   FontSize="20"
+                                   HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutavenida" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="valo"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Valo Velho"
+               TextColor="Black"
+               FontSize="25"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>
+                            <Label Text="Estrada de Itapecerica Valo Velho – SP"
+               TextColor="Black"
+               FontSize="20"
+               HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutvalo" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="pereira"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Pereira Barreto"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Pereira Barreto, 900
+Santo André – SP"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutpereira" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="riobranco"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Rio Branco"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Rio Branco 1457
+São Paulo – SP"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutriobranco" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="itamarati"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Itamarati"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Itamarati 2890
+Santo André – SP"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutitamarati" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="esquivel"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Esquível"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Antônio Piranga 887
+Centro, Diadema – SP"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutesquivel" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="avgoias"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Av. Goiás"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Goiás, 1631 – Santa Paula,
+São Caetano do Sul – SP"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutavgoias" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="guilhermina"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Guilhermina"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="R. Flamengo, 321 – Guilhermina,
+Praia Grande – SP
+"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutguilhermina" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="boqueirao"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Boqueirão"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Pres. Castelo Branco
+1486/1490 Praia Grande"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutboqueirao" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="carmo"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Parque do Carmo"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Afonso de Sampaio e Sousa,
+558 – São Paulo"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutcarmo" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="giovani"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Giovani Breda"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Praça Giovani Breda, 1678,
+Vila Assunção"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutgiovani" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="zaira"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Zaíra"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Pres. Castelo Branco, 2008
+Jardim Zaíra – Mauá
+"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutzaira" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="heliopolis"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Heliópolis"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Almirante Delamare, 1335
+Vila Heliópolis"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutheliopolis" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="pimentas"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Pimentas"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. José Miguel Ackel, 1032
+Pq. Industrial Cumbica Guarulhos"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutpimentas" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="guaianases"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Guaianases"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="R. Luís Mateus, 618 Jardim São Pedro, São Paulo
+"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutguaianases" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="clima"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Bom Clima"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. João Bernardo Medeiros, 425 Jardim Bom Clima, Guarulhos"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutclima" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="campogrande"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Campo Grande - MS"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="R. Marechal Rondon, 1359 – Centro, Campo Grande – MS – 79002-205"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutcampogrande" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="mogi"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Mogi das Cruzes"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Braz de Pina, 509 – Vila Vitória,
+Mogi das Cruzes – SP, 08730-020"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutmogi" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="jaguare"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Jaguaré"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Praça Bento de Assis 14, Jaguaré
+São Paulo – 05334-120"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutjaguare" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="jardim"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Jardim - GO"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Rua 54, 208 – Jardim Goiás,
+Goiânia GO, 74810-220"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutjardim" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="passeio"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Passeio das Águas - GO"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Perimetral Norte, 8303
+Goiânia – GO, 74573-012"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutpasseio" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="extrema"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Extrema - Minas Gerais"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Avenida Vereador José Ferreira, 607, Extrema – MG – 37640-000
+"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutextrema" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="itaquera"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Itaquera - Tennessee"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Rua Padre Viegas de Menezes, 445
+Itaquera, São Paulo – SP, 08220-510"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutitaquera" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="alameda"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Alameda"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Rua Arlindo Marchetti, 338
+São Caetano do Sul – SP, 09560-410"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutalameda" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="indaiatuba"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Indaiatuba"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Eng. Fábio Roberto Barnabé, 2685
+Jardim Pau Preto, Indaiatuba – SP"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutindaiatuba" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="saovicente"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="São Vicente"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Presidente Wilson, 962
+Centro, São Vicente – SP"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutsaovicente" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="camilopolis"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Camilópolis"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Rua Olímpia, 307
+Vila Camilópolis Santo André – SP"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutcamilopolis" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="prudente"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Vila Prudente"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Professor Luiz Ignácio Anhaia Mello, 3660 – Jardim Independência"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutprudente" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="laranjal"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Laranjal Paulista"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Cesário Carlos de Almeida, 92 – Jardim Europa – 18500-000"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutlaranjal" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="carapicuiba"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Carapicuíba"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Estrada da Fazendinha, nº 48/50,
+Bairro Vila Dirce – Carapicuíba"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutcarapicuiba" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="sacoma"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Sacomã"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Estrada das Lágrimas, 810 – Ipiranga, São Paulo – 04232-000"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutsacoma" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="vilanova"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Vila Nova - GO"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Ver Jose Monteiro Q H, 1360 – St. Vila Nova, Goiânia – GO, Goiânia, 74653-230"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutvilanova" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="jardimsp"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Jardim São Paulo"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Rua Sarutaiá, 205 – Jardim São Paulo, Guarulhos – São Paulo, 07131-000"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutjardimsp" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="poa"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Poá"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Rua Vinte e Seis de Março, 260 – Centro, Poá, SP – 08562-140
+"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutpoa" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="sapopemba"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Label Text="Sapopemba"
+TextColor="Black"
+FontSize="25"
+FontAttributes="Bold"
+HorizontalTextAlignment="Center"/>
+                            <Label Text="Av. Sapopemba, 7750 – Vila Tolstoi, São Paulo – 03269-020"
+TextColor="Black"
+FontSize="20"
+HorizontalTextAlignment="Center"/>
+                            <StackLayout x:Name="stackLayoutsapopemba" Orientation="Vertical"></StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

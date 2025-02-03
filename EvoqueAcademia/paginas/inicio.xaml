@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EvoqueAcademia.paginas.inicio">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="White">
+            <StackLayout BackgroundColor="White" Padding="20" Orientation="Horizontal" Spacing="40">
+                <ImageButton Source="pessoa"
+                             HeightRequest="50"
+                             BackgroundColor="White"
+                             HorizontalOptions="Start"
+                             Clicked="Admin"/>
+                
+                <Image Source="evoquelogo"
+                           HeightRequest="50"/>
+            </StackLayout>
+            <StackLayout Padding="10" HeightRequest="200" Margin="0,-6,0,0" BackgroundColor="#FD5B1F">
+                <Label Text="VEM SER EVOQUE!"
+                    Margin="0,30,0,0"
+                    FontSize="27" 
+                    TextColor="White"
+                    FontAttributes="Bold"/>
+
+                <Label Text="Venha treinar na melhor rede de academias, com uma experiência única e com um novo conceito que só a Evoque Academia tem!"
+                       FontSize="20"
+                       HorizontalTextAlignment="Start"
+                       LineBreakMode="WordWrap"
+                       WidthRequest="300"
+                       HorizontalOptions="Start"/>
+            </StackLayout>
+            <AbsoluteLayout BackgroundColor="#FD5B1F" Margin="0,-6,0,0">
+                <Image Source="evoque1" Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+               AbsoluteLayout.LayoutFlags="All" />
+
+                <Button Text="Diferenciais"
+                BackgroundColor="#FD5B1F"
+                WidthRequest="300"
+                HeightRequest="50"
+                HorizontalOptions="Center"
+                CornerRadius="20"
+                AbsoluteLayout.LayoutBounds="0.5, 0.93, AutoSize, AutoSize"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                Clicked="OnDiferenciaisButtonClicked"/>
+            </AbsoluteLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

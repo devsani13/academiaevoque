@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EvoqueAcademia.paginas.login"
+             BackgroundColor="Black">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" VerticalOptions="Center">
+            <Label Text="Login"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="White"/>
+            
+            <Entry Placeholder="Usuário"
+                   x:Name="usernameEntry"
+                   PlaceholderColor="White"/>
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                <Entry Placeholder="Senha"
+                       IsPassword="true"
+                       x:Name="passwordEntry"
+                       WidthRequest="260"
+                       PlaceholderColor="White"/>
+                
+                <ImageButton Source="esconder"
+                             Clicked="OnTogglePasswordVisibilityClicked"
+                             x:Name="togglePasswordButton"
+                             HeightRequest="40"
+                             BackgroundColor="Black" />
+            </StackLayout>
+
+            <Button Text="Entrar"
+                    Clicked="OnLoginButtonClicked"
+                    BackgroundColor="#FD5B1F"/>
+            
+            <Button Text="Cadastrar-se"
+                    Clicked="OnRegisterButtonClicked"
+                    BackgroundColor="White"
+                    TextColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

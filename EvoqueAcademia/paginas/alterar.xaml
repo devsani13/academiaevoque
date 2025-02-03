@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EvoqueAcademia.paginas.alterar"
+             BackgroundColor="Black">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" VerticalOptions="Center">
+            <Label Text="Alterar Usuário"
+                   FontSize="30"
+                   HorizontalOptions="Center"
+                   TextColor="White"/>
+
+            <Picker Title="Selecione um usuário"
+                    x:Name="userPicker"
+                    TitleColor="White"
+                    TextColor="White"
+                    ItemDisplayBinding="{Binding Usuario}"/>
+
+            <Label Text="Nome:"/>
+            <Entry Placeholder="Nome"
+                   x:Name="alterarNameEntry"
+                   PlaceholderColor="White"
+                   Text="{Binding SelectedUser.Nome}"/>
+
+            <Label Text="Usuario:"/>
+            <Entry Placeholder="Usuário"
+                   x:Name="alterarUsernameEntry"
+                   PlaceholderColor="White"
+                   Text="{Binding SelectedUser.Usuario}"/>
+
+            <Label Text="Senha:"/>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                <Entry Placeholder="Senha"
+                       IsPassword="true"
+                       x:Name="alterarPasswordEntry"
+                       WidthRequest="260"
+                       PlaceholderColor="White"
+                       Text="{Binding SelectedUser.Senha}"/>
+            </StackLayout>
+
+            <Button Text="Alterar"
+                    BackgroundColor="#FD5B1F"
+                    Clicked="OnAlterarClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

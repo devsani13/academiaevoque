@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EvoqueAcademia.paginas.listar"
+             BackgroundColor="Black">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Usuários Cadastrados"
+                   FontSize="30"
+                   HorizontalOptions="Center"
+                   TextColor="White"/>
+
+            <ListView x:Name="usuariosListView"
+                      BackgroundColor="Black"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" Padding="10">
+                                <Label Text="{Binding Nome, StringFormat='Nome: {0}'}" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+                                <Label Text="{Binding Usuario, StringFormat='Usuario: {0}'}" TextColor="White" FontSize="18"/>
+                                <Label Text="{Binding Senha, StringFormat='Senha: {0}'}" TextColor="White" FontSize="18"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button Text="Recarregar Lista"
+                    BackgroundColor="#FD5B1F"
+                    TextColor="White"
+                    Clicked="OnRecarregarClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

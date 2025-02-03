@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EvoqueAcademia.paginas.excluir"
+             BackgroundColor="Black">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Excluir Usuário"
+                   FontSize="30"
+                   HorizontalOptions="Center"
+                   TextColor="White"/>
+
+            <Picker Title="Selecione um usuário"
+                    x:Name="userPicker"
+                    TitleColor="White"
+                    TextColor="White"/>
+
+            <Button Text="Excluir"
+                    BackgroundColor="#FD5B1F"
+                    Clicked="OnDeleteClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

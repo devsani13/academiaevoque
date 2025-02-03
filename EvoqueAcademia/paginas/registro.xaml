@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EvoqueAcademia.paginas.registro"
+             BackgroundColor="Black">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" VerticalOptions="Center">
+            <Label Text="Cadastrar-se"
+                   FontSize="30"
+                   HorizontalOptions="Center"
+                   TextColor="White"/>
+
+            <Entry Placeholder="Nome"
+                   x:Name="registerNameEntry"
+                   PlaceholderColor="White"/>
+
+            <Entry Placeholder="Usuário"
+                   x:Name="registerUsernameEntry"
+                   PlaceholderColor="White"/>
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                <Entry Placeholder="Senha"
+                       IsPassword="true"
+                       x:Name="passwordEntry1"
+                       WidthRequest="260"
+                       PlaceholderColor="White"/>
+
+                <ImageButton Source="esconder"
+                             Clicked="OnTogglePasswordVisibilityClicked1"
+                             x:Name="togglePasswordButton1"
+                             HeightRequest="40"
+                             BackgroundColor="Black" /> 
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                <Entry Placeholder="Repetir Senha"
+                       IsPassword="true"
+                       x:Name="passwordEntry2"
+                       WidthRequest="260"
+                       PlaceholderColor="White"/>
+
+                <ImageButton Source="esconder"
+                             Clicked="OnTogglePasswordVisibilityClicked2"
+                             x:Name="togglePasswordButton2"
+                             HeightRequest="40"
+                             BackgroundColor="Black" />
+            </StackLayout>
+
+            <Button Text="Cadastrar"
+                    BackgroundColor="#FD5B1F"
+                    Clicked="OnCadastrarClicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
